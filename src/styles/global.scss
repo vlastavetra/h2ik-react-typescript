@@ -1,0 +1,73 @@
+@import '../styles/variables.scss';
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../../public/fonts/RobotoMono-VariableFont_wght.ttf') format('ttf supports variations'),
+       url('../../public/fonts/RobotoMono-VariableFont_wght.ttf') format('fft-variations');
+	font-weight: 100 700;
+	font-stretch: 25% 151%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: $color_black;
+  background: $color_white;
+  font-family: 'Roboto Mono', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, blockquote, hr {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+button {
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	outline: 0;
+	padding: 0;
+	display: block;
+	cursor: inherit;
+	touch-action: manipulation;
+	appearance: none;
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+input, textarea {
+	display: block;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+}
